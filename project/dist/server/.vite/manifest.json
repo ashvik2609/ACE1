@@ -1,0 +1,253 @@
+{
+  "/tmp/cc-agent/67253749/project/project/src/styles.css": {
+    "file": "assets/styles-DCupgpbv.css",
+    "src": "/tmp/cc-agent/67253749/project/project/src/styles.css"
+  },
+  "_EmailSignup-DvlvgRd8.js": {
+    "file": "assets/EmailSignup-DvlvgRd8.js",
+    "name": "EmailSignup",
+    "imports": [
+      "_server-C1jvFsDS.js",
+      "_router-I3TUVc4j.js",
+      "_types-DGfzljZx.js"
+    ]
+  },
+  "_PageHero-DUR-Qtfc.js": {
+    "file": "assets/PageHero-DUR-Qtfc.js",
+    "name": "PageHero",
+    "imports": [
+      "_server-C1jvFsDS.js"
+    ]
+  },
+  "_Reveal-Cx-XEV-0.js": {
+    "file": "assets/Reveal-Cx-XEV-0.js",
+    "name": "Reveal",
+    "imports": [
+      "_server-C1jvFsDS.js",
+      "_router-I3TUVc4j.js"
+    ]
+  },
+  "_placeholders-D6O2jgSJ.js": {
+    "file": "assets/placeholders-D6O2jgSJ.js",
+    "name": "placeholders"
+  },
+  "_router-I3TUVc4j.js": {
+    "file": "assets/router-I3TUVc4j.js",
+    "name": "router",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-C1jvFsDS.js"
+    ],
+    "dynamicImports": [
+      "src/routes/resources.tsx?tsr-split=component",
+      "src/routes/projects.tsx?tsr-split=component",
+      "src/routes/members.tsx?tsr-split=component",
+      "src/routes/faculty.tsx?tsr-split=component",
+      "src/routes/events.tsx?tsr-split=component",
+      "src/routes/contact.tsx?tsr-split=component",
+      "src/routes/alumni.tsx?tsr-split=component",
+      "src/routes/aceit.tsx?tsr-split=component",
+      "src/routes/about.tsx?tsr-split=component",
+      "src/routes/index.tsx?tsr-split=component"
+    ],
+    "assets": [
+      "assets/styles-DCupgpbv.css"
+    ]
+  },
+  "_server-C1jvFsDS.js": {
+    "file": "assets/server-C1jvFsDS.js",
+    "name": "server",
+    "isDynamicEntry": true,
+    "dynamicImports": [
+      "tanstack-start-manifest:v",
+      "src/lib/subscribers.functions.ts?tss-serverfn-split",
+      "_router-I3TUVc4j.js",
+      "src/start.ts",
+      "node_modules/@tanstack/start-server-core/dist/esm/empty-plugin-adapters.js"
+    ]
+  },
+  "_types-DGfzljZx.js": {
+    "file": "assets/types-DGfzljZx.js",
+    "name": "types"
+  },
+  "_worker-entry-DAHBkD37.js": {
+    "file": "assets/worker-entry-DAHBkD37.js",
+    "name": "worker-entry",
+    "dynamicImports": [
+      "_server-C1jvFsDS.js"
+    ]
+  },
+  "node_modules/@tanstack/start-server-core/dist/esm/empty-plugin-adapters.js": {
+    "file": "assets/empty-plugin-adapters-BFgPZ6_d.js",
+    "name": "empty-plugin-adapters",
+    "src": "node_modules/@tanstack/start-server-core/dist/esm/empty-plugin-adapters.js",
+    "isDynamicEntry": true
+  },
+  "src/lib/subscribers.functions.ts?tss-serverfn-split": {
+    "file": "assets/subscribers.functions-CVgOpBe7.js",
+    "name": "subscribers.functions",
+    "src": "src/lib/subscribers.functions.ts?tss-serverfn-split",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-C1jvFsDS.js",
+      "_types-DGfzljZx.js"
+    ]
+  },
+  "src/routes/about.tsx?tsr-split=component": {
+    "file": "assets/about-z0RHFMGp.js",
+    "name": "about",
+    "src": "src/routes/about.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-C1jvFsDS.js",
+      "_Reveal-Cx-XEV-0.js",
+      "_PageHero-DUR-Qtfc.js",
+      "_placeholders-D6O2jgSJ.js",
+      "_router-I3TUVc4j.js"
+    ]
+  },
+  "src/routes/aceit.tsx?tsr-split=component": {
+    "file": "assets/aceit-BHsWMy9L.js",
+    "name": "aceit",
+    "src": "src/routes/aceit.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-C1jvFsDS.js",
+      "_Reveal-Cx-XEV-0.js",
+      "_PageHero-DUR-Qtfc.js",
+      "_EmailSignup-DvlvgRd8.js",
+      "_placeholders-D6O2jgSJ.js",
+      "_router-I3TUVc4j.js",
+      "_types-DGfzljZx.js"
+    ]
+  },
+  "src/routes/alumni.tsx?tsr-split=component": {
+    "file": "assets/alumni-CeDKR4RK.js",
+    "name": "alumni",
+    "src": "src/routes/alumni.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-C1jvFsDS.js",
+      "_Reveal-Cx-XEV-0.js",
+      "_PageHero-DUR-Qtfc.js",
+      "_placeholders-D6O2jgSJ.js",
+      "_router-I3TUVc4j.js"
+    ]
+  },
+  "src/routes/contact.tsx?tsr-split=component": {
+    "file": "assets/contact-C4VfTNUX.js",
+    "name": "contact",
+    "src": "src/routes/contact.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-C1jvFsDS.js",
+      "_Reveal-Cx-XEV-0.js",
+      "_PageHero-DUR-Qtfc.js",
+      "_router-I3TUVc4j.js",
+      "_types-DGfzljZx.js"
+    ]
+  },
+  "src/routes/events.tsx?tsr-split=component": {
+    "file": "assets/events-C0va7x2n.js",
+    "name": "events",
+    "src": "src/routes/events.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-C1jvFsDS.js",
+      "_Reveal-Cx-XEV-0.js",
+      "_PageHero-DUR-Qtfc.js",
+      "_placeholders-D6O2jgSJ.js",
+      "_router-I3TUVc4j.js"
+    ]
+  },
+  "src/routes/faculty.tsx?tsr-split=component": {
+    "file": "assets/faculty-B7Wo8vvK.js",
+    "name": "faculty",
+    "src": "src/routes/faculty.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-C1jvFsDS.js",
+      "_Reveal-Cx-XEV-0.js",
+      "_PageHero-DUR-Qtfc.js",
+      "_placeholders-D6O2jgSJ.js",
+      "_router-I3TUVc4j.js"
+    ]
+  },
+  "src/routes/index.tsx?tsr-split=component": {
+    "file": "assets/index-D8ns7DUV.js",
+    "name": "index",
+    "src": "src/routes/index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-C1jvFsDS.js",
+      "_router-I3TUVc4j.js",
+      "_Reveal-Cx-XEV-0.js",
+      "_EmailSignup-DvlvgRd8.js",
+      "_types-DGfzljZx.js"
+    ]
+  },
+  "src/routes/members.tsx?tsr-split=component": {
+    "file": "assets/members-BhISMZzB.js",
+    "name": "members",
+    "src": "src/routes/members.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-C1jvFsDS.js",
+      "_Reveal-Cx-XEV-0.js",
+      "_PageHero-DUR-Qtfc.js",
+      "_placeholders-D6O2jgSJ.js",
+      "_router-I3TUVc4j.js"
+    ]
+  },
+  "src/routes/projects.tsx?tsr-split=component": {
+    "file": "assets/projects-CJ5SxT-e.js",
+    "name": "projects",
+    "src": "src/routes/projects.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-C1jvFsDS.js",
+      "_Reveal-Cx-XEV-0.js",
+      "_PageHero-DUR-Qtfc.js",
+      "_placeholders-D6O2jgSJ.js",
+      "_router-I3TUVc4j.js"
+    ]
+  },
+  "src/routes/resources.tsx?tsr-split=component": {
+    "file": "assets/resources-Bt6BRchO.js",
+    "name": "resources",
+    "src": "src/routes/resources.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-C1jvFsDS.js",
+      "_Reveal-Cx-XEV-0.js",
+      "_PageHero-DUR-Qtfc.js",
+      "_placeholders-D6O2jgSJ.js",
+      "_router-I3TUVc4j.js"
+    ]
+  },
+  "src/start.ts": {
+    "file": "assets/start-BG0k_nWP.js",
+    "name": "start",
+    "src": "src/start.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-C1jvFsDS.js",
+      "_worker-entry-DAHBkD37.js"
+    ]
+  },
+  "tanstack-start-manifest:v": {
+    "file": "assets/_tanstack-start-manifest_v-5nafv5Uc.js",
+    "name": "_tanstack-start-manifest_v",
+    "src": "tanstack-start-manifest:v",
+    "isDynamicEntry": true
+  },
+  "virtual:cloudflare/worker-entry": {
+    "file": "index.js",
+    "name": "index",
+    "src": "virtual:cloudflare/worker-entry",
+    "isEntry": true,
+    "imports": [
+      "_worker-entry-DAHBkD37.js"
+    ]
+  }
+}
