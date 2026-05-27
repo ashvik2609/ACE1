@@ -3,7 +3,7 @@ import { Layout } from "@/components/site/Layout";
 import { EmailSignup } from "@/components/site/EmailSignup";
 import { Reveal } from "@/components/site/Reveal";
 import { ArrowRight } from "lucide-react";
-import logo from "@/assets/image-removebg-preview.png";
+import logo from "@/assets/image-removebg-preview copy.png";
 import backgroundImage from "@/assets/image.png";
 
 export const Route = createFileRoute("/")({
