@@ -21,8 +21,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-hairline bg-background/80 backdrop-blur-md">
       <div className="container-page flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 font-display text-lg font-bold tracking-tight">
-          <img src={logo} alt="ACE" className="h-7 w-auto" />
+        <Link to="/" className="flex items-center gap-2 font-display text-lg font-bold tracking-tight hover:opacity-80 transition-opacity duration-300">
+          <img src={logo} alt="ACE" className="h-7 w-auto animate-header-logo" />
         </Link>
         <nav className="hidden lg:flex items-center gap-7 text-sm">
           {nav.map((n) => (

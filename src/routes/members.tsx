@@ -20,10 +20,10 @@ export const Route = createFileRoute("/members")({
 
 
 
-function PersonCard({ name, role }: { name: string; role: string }) {
+function PersonCard({ name, role, index = 0 }: { name: string; role: string; index?: number }) {
   return (
-    <Reveal type="scale">
-      <article className="bg-background p-6">
+    <Reveal type="scale" delay={index * 50}>
+      <article className="bg-background p-6 hover:bg-surface transition-colors duration-300 transform hover:scale-105 cursor-pointer">
         <div className="font-display font-semibold text-lg leading-tight">{name}</div>
         <div className="text-sm text-muted-foreground mt-1">{role}</div>
       </article>
@@ -34,19 +34,21 @@ function PersonCard({ name, role }: { name: string; role: string }) {
 
 function Tier({ label, people }: { label: string; people: { name: string; role: string }[] }) {
   return (
-    <div className="mb-16">
-      <div className="flex items-baseline justify-between mb-6 pb-3 border-b border-hairline">
-        <h3 className="font-display text-2xl font-semibold">{label}</h3>
-        <span className="text-xs uppercase tracking-widest text-muted-foreground tabular-nums">
-          {String(people.length).padStart(2, "0")}
-        </span>
+    <Reveal type="fade">
+      <div className="mb-16">
+        <div className="flex items-baseline justify-between mb-6 pb-3 border-b border-hairline">
+          <h3 className="font-display text-2xl font-semibold">{label}</h3>
+          <span className="text-xs uppercase tracking-widest text-muted-foreground tabular-nums">
+            {String(people.length).padStart(2, "0")}
+          </span>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-px bg-hairline border border-hairline">
+          {people.map((p, i) => (
+            <PersonCard key={p.name} name={p.name} role={p.role} index={i} />
+          ))}
+        </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-px bg-hairline border border-hairline">
-        {people.map((p) => (
-          <PersonCard key={p.name} name={p.name} role={p.role} />
-        ))}
-      </div>
-    </div>
+    </Reveal>
   );
 }
 

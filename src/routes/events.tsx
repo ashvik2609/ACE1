@@ -31,9 +31,9 @@ function Events() {
         <div className="space-y-10">
           {events.map((e, i) => (
             <Reveal key={e.name} type="default" delay={i * 100}>
-              <article className="grid md:grid-cols-12 gap-6 py-8 border-t border-hairline">
+              <article className="grid md:grid-cols-12 gap-6 py-8 border-t border-hairline group cursor-pointer hover:opacity-80 transition-opacity duration-300">
               <div className="md:col-span-4">
-                <h3 className="font-display text-xl font-semibold leading-tight">{e.name}</h3>
+                <h3 className="font-display text-xl font-semibold leading-tight group-hover:translate-x-2 transition-transform duration-300">{e.name}</h3>
                 {e.date && <div className="text-sm text-muted-foreground mt-2">{e.date}</div>}
                 {e.venue && <div className="text-sm text-muted-foreground">{e.venue}</div>}
                 {e.organizers && (

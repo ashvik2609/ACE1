@@ -28,13 +28,13 @@ function Alumni() {
       <section className="container-page py-20 space-y-12">
         {alumni.map((a, i) => (
           <Reveal key={a.name} type="default" delay={i * 100}>
-            <article className="grid md:grid-cols-12 gap-8 border-t border-hairline pt-10">
+            <article className="grid md:grid-cols-12 gap-8 border-t border-hairline pt-10 group cursor-pointer hover:opacity-80 transition-opacity duration-300">
             <header className="md:col-span-4">
-              <div className="font-display text-xl font-semibold">{a.name}</div>
-              <div className="text-xs uppercase tracking-widest text-muted-foreground mt-1">Batch · {a.batch}</div>
-              <div className="text-sm text-muted-foreground mt-2">{a.now}</div>
+              <div className="font-display text-xl font-semibold group-hover:text-foreground transition-colors duration-300">{a.name}</div>
+              <div className="text-xs uppercase tracking-widest text-muted-foreground mt-1 group-hover:text-foreground transition-colors duration-300">Batch · {a.batch}</div>
+              <div className="text-sm text-muted-foreground mt-2 group-hover:text-foreground transition-colors duration-300">{a.now}</div>
             </header>
-            <p className="md:col-span-8 text-muted-foreground leading-relaxed">{a.note}</p>
+            <p className="md:col-span-8 text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300">{a.note}</p>
             </article>
           </Reveal>
         ))}

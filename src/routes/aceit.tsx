@@ -43,15 +43,17 @@ function ACEit() {
 
             <div className="mt-10 grid md:grid-cols-2 gap-px bg-hairline border border-hairline">
               {issue.sections.map((section, i) => (
-                <div key={section.title} className="bg-background p-8">
-                  <div className="eyebrow mb-3 tabular-nums">{String(i + 1).padStart(2, "0")}</div>
-                  <h4 className="font-display text-xl font-semibold mb-4">{section.title}</h4>
-                  <ul className="space-y-2 text-muted-foreground">
-                    {section.items.map((it) => (
-                      <li key={it} className="text-sm leading-relaxed">{it}</li>
-                    ))}
-                  </ul>
-                </div>
+                <Reveal key={section.title} type="scale" delay={i * 50}>
+                  <div className="bg-background p-8 hover:bg-surface transition-colors duration-300 transform hover:scale-105 cursor-pointer">
+                    <div className="eyebrow mb-3 tabular-nums">{String(i + 1).padStart(2, "0")}</div>
+                    <h4 className="font-display text-xl font-semibold mb-4">{section.title}</h4>
+                    <ul className="space-y-2 text-muted-foreground">
+                      {section.items.map((it) => (
+                        <li key={it} className="text-sm leading-relaxed">{it}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </Reveal>
               ))}
             </div>
             </article>

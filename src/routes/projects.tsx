@@ -28,16 +28,16 @@ function Projects() {
         <div className="divide-y divide-hairline border-y border-hairline">
           {projects.map((p, i) => (
             <Reveal key={p.title} type="default" delay={i * 100}>
-              <article className="py-10 grid md:grid-cols-12 gap-6 items-start">
-              <div className="md:col-span-1 text-sm tabular-nums text-muted-foreground">
+              <article className="py-10 grid md:grid-cols-12 gap-6 items-start group cursor-pointer hover:opacity-75 transition-opacity duration-300">
+              <div className="md:col-span-1 text-sm tabular-nums text-muted-foreground group-hover:translate-x-1 transition-transform duration-300">
                 {String(i + 1).padStart(2, "0")}
               </div>
               <div className="md:col-span-3">
-                <span className="inline-block text-xs uppercase tracking-wider border border-hairline px-2 py-1">
+                <span className="inline-block text-xs uppercase tracking-wider border border-hairline px-2 py-1 group-hover:bg-accent transition-colors duration-300">
                   {p.tag}
                 </span>
               </div>
-              <h3 className="md:col-span-4 font-display text-2xl font-semibold tracking-tight">{p.title}</h3>
+              <h3 className="md:col-span-4 font-display text-2xl font-semibold tracking-tight group-hover:translate-x-2 transition-transform duration-300">{p.title}</h3>
               <p className="md:col-span-4 text-muted-foreground leading-relaxed">{p.description}</p>
               </article>
             </Reveal>
