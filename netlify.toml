@@ -1,8 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "dist"
+  publish = "dist/client"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# Netlify doesn't support SSR for TanStack Start
+# This configuration is for static deployment only
